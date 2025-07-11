@@ -1,7 +1,6 @@
-require('dotenv').config();
 const express= require("express");
 const app= express();
-const port = process.env.PORT;
+const port = process.env.PORT || 3000;
 const path = require("path");
 const { faker } = require('@faker-js/faker');
 const { v4: uuidv4 } = require('uuid');
@@ -18,14 +17,11 @@ app.use(express.urlencoded({extended:true}));
 const mysql = require('mysql2');
 // mysql 2 ku backend ke sath connect karre 
 const connection = mysql.createConnection({
-  host: process.env.DB_HOST,
-  user: process.env.DB_USER,
-  database: process.env.DB_NAME,
-  password: process.env.DB_PASSWORD,
-  ssl: { rejectUnauthorized: false } // db4free or PlanetScale ke liye zaruri hai
+  host: 'localhost',
+  user: 'root',
+  database: 'mini_tweet',
+  password:'ghouse123'
 });
-
-
 
 // generating fake data from faker
 let  getUser= ()=> {
