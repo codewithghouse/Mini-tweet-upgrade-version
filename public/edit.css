@@ -1,0 +1,140 @@
+/* Root styling */
+body {
+  background-color: #0d1117;
+  color: #c9d1d9;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  color: #58a6ff;
+  font-size: 1.8rem;
+}
+
+.action-btns .btn {
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.btn.blue {
+  background-color: #238636;
+  color: white;
+}
+
+.btn.gray {
+  background-color: #21262d;
+  color: #c9d1d9;
+  border: 1px solid #30363d;
+}
+
+.btn:hover {
+  opacity: 0.85;
+  transform: translateY(-1px);
+}
+
+/* User card */
+.user-card {
+  background-color: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/* Form fields */
+input[type="text"],
+input[type="password"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #30363d;
+  border-radius: 5px;
+  background-color: #0d1117;
+  color: white;
+  font-size: 1rem;
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* Footer note */
+p.note {
+  font-size: 0.85rem;
+  color: #8b949e;
+  margin-top: -10px;
+  margin-bottom: 20px;
+}
+
+/* User listing layout */
+.user-box {
+  background-color: #161b22;
+  padding: 16px;
+  margin-bottom: 12px;
+  border: 1px solid #30363d;
+  border-radius: 8px;
+}
+
+.user-box h3 {
+  color: #58a6ff;
+  margin: 0 0 8px 0;
+}
+
+.user-box .meta {
+  font-size: 0.85rem;
+  color: #8b949e;
+  margin-bottom: 10px;
+}
+
+/* Buttons below each post */
+.user-box .actions {
+  display: flex;
+  gap: 10px;
+}
+
+.actions form,
+.actions a {
+  display: inline-block;
+}
+
+.actions .btn {
+  padding: 6px 12px;
+  font-size: 0.8rem;
+  border-radius: 6px;
+}
+
+/* Responsive touch */
+@media (max-width: 600px) {
+  .wrapper {
+    padding: 10px;
+  }
+
+  header h1 {
+    font-size: 1.4rem;
+  }
+
+  .action-btns .btn {
+    padding: 6px 12px;
+  }
+}

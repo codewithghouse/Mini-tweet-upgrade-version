@@ -1,0 +1,118 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0d1117;
+  color: #c9d1d9;
+}
+
+.wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #58a6ff;
+}
+
+.action-btns {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: white;
+  font-weight: 600;
+  transition: 0.3s ease;
+  border: none;
+}
+
+.btn:hover {
+  opacity: 0.9;
+  transform: scale(1.03);
+}
+
+.btn.green {
+  background-color: #238636;
+}
+
+.btn.green:hover {
+  background-color: #2ea043;
+}
+
+.btn.blue {
+  background-color: #1f6feb;
+}
+
+.btn.blue:hover {
+  background-color: #388bfd;
+}
+
+.btn.red {
+  background-color: #da3633;
+}
+
+.btn.red:hover {
+  background-color: #f85149;
+}
+
+.btn.gray {
+  background-color: #6e7681;
+}
+
+.btn.gray:hover {
+  background-color: #8b949e;
+}
+
+.users-container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.user-card {
+  background-color: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(88, 166, 255, 0.15);
+  transition: all 0.2s ease-in-out;
+}
+
+.user-card:hover {
+  box-shadow: 0 0 20px rgba(88, 166, 255, 0.3);
+  transform: scale(1.01);
+}
+
+.user-card p {
+  font-size: 1rem;
+  margin: 8px 0;
+  line-height: 1.4;
+}
+
+.user-card p i {
+  color: #58a6ff;
+  margin-right: 6px;
+}
+
+.user-actions {
+  margin-top: 15px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+}

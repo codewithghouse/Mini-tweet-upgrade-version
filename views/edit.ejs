@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Edit User | Mini Tweet App</title>
+  <link rel="stylesheet" href="/edit.css">
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <h1>Mini Tweet App – Upgraded</h1>
+      <div class="action-btns">
+        <a href="/users" class="btn gray">← Back to Users</a>
+      </div>
+    </header>
+
+    <div class="user-card">
+      <form action="/users/<%= userdata.id %>?_method=PATCH" method="POST">
+        <p>
+          <label for="id">User ID:</label><br>
+          <input type="text" id="id" name="id" value="<%= userdata.id %>" readonly>
+        </p>
+        
+        <p>
+          <label for="username">Username:</label><br>
+          <input type="text" id="username" name="username" value="<%= userdata.username %>" required>
+        </p>
+
+        <p>
+          <label for="content">Content:</label><br>
+          <textarea id="content" name="content" rows="4" required><%= userdata.content %></textarea>
+        </p>
+
+        <p>
+          <label for="password">Password:</label><br>
+          <input type="password" id="password" name="password" placeholder="Enter your password to confirm edit" required>
+        </p>
+
+        <p style="color: #ffa657; font-size: 0.95rem;">⚠️ Please enter your password to update the user.</p>
+
+        <button type="submit" class="btn blue">Update User</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

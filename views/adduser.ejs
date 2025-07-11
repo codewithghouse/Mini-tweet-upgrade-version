@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Add New User</title>
+  <link rel="stylesheet" href="/adduser.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🧠 Mini Tweet App — Add New User</h1>
+      <p class="subtitle">Feel free to post anonymously & share your thoughts.</p>
+    </header>
+
+    <form action="/users" method="POST" class="form-card">
+      <div class="form-group">
+        <label for="username">👤 Username</label>
+        <input type="text" name="username" id="username" required placeholder="eg. coderX">
+      </div>
+
+      <div class="form-group">
+        <label for="email">📧 Email</label>
+        <input type="email" name="email" id="email" required placeholder="eg. coderx@email.com">
+      </div>
+
+      <div class="form-group">
+        <label for="password">🔒 Password</label>
+        <input type="password" name="password" id="password" required placeholder="Create a strong password">
+      </div>
+
+      <div class="form-group">
+        <label for="content">📝 Content</label>
+        <textarea name="content" id="content" rows="4" placeholder="What’s on your mind?" required></textarea>
+      </div>
+
+      <button type="submit" class="submit-btn">🚀 Add User</button>
+
+      <div class="nav-links">
+        <a href="/" class="btn">🏠 Home</a>
+        <a href="/users" class="btn">👥 All Users</a>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
